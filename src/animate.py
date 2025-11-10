@@ -37,7 +37,7 @@ def animate_sim():
     # back button in help
     back = sim_font.render("Back", 1, text_color)
     back_rect = back.get_rect(topleft=(825,640))
-    help_text = pygame.image.load("assets/images/help_text.png")
+    help_text = pygame.image.load("src/assets/images/help_text.png")
 
     pos = create_data_cat(type="pos", font=data_font, screen=screen)
     vel = create_data_cat(type="vel",font=data_font, screen=screen)
@@ -52,12 +52,12 @@ def animate_sim():
     
     # --------------------------------------Simulation screen[2]--------------------------------
     sim_running = True
-    font1 = pygame.font.SysFont("assets/font/josefinSons.ttf", 35)
+    font1 = pygame.font.SysFont("src/assets/font/josefinSons.ttf", 35)
 
     # Background
-    background = pygame.image.load("assets/images/help_text.png")
+    background = pygame.image.load("src/assets/images/help_text.png")
     background = pygame.transform.scale(background, (1000, 700))
-    dart = pygame.image.load("assets/images/dart.png")
+    dart = pygame.image.load("src/assets/images/dart.png")
     dart = pygame.transform.scale(dart, (100, 50))
     dart2 = pygame.transform.scale(dart, (55, 27.5))
     
